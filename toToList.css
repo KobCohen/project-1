@@ -1,0 +1,183 @@
+body {
+    background-image: url(tile.jpg);
+}
+
+.item1 {
+    grid-area: header;
+    margin-top: 2%;
+    grid-column: 2 / 6;
+}
+
+.item2 {
+    grid-column: 2 / 6;
+    position: relative;
+    margin: 10%;
+    width: 65rem;
+    bottom: 7rem;
+    right: 5.2rem;
+}
+
+.buttons {
+    grid-column: 2 / 6;
+    display: contents;
+}
+
+.grid-container {
+    grid-template-columns: auto auto auto auto auto;
+    display: grid;
+    justify-content: space-around;
+    grid-template-areas:
+        'header '
+        'menu';
+    gap: 20px;
+    text-align: center;
+}
+
+.formbg {
+    display: block;
+}
+
+#taskInput {
+    position: relative;
+    height: 1rem;
+    width: 58%;
+    left: 6%;
+    bottom: 11%;
+    border: 0ch;
+    background-color: #F7F7F7;
+}
+
+.inputs {
+    background: url("formbg.jpg");
+    position: relative;
+    margin: 10%;
+    width: 37.6rem;
+    height: 4rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 68%;
+    display: inline-table;
+    width: 62%;
+    margin-inline: auto;
+}
+
+#date {
+    position: absolute;
+    height: 44%;
+    width: 20%;
+    right: 46%;
+    bottom: 58%;
+
+    border: 0ch;
+    background-color: #F7F7F7;
+    font-size: small;
+    border-radius: 8px;
+    border: 2px solid blue;
+    color: rgb(77, 77, 248);
+}
+
+#time {
+    position: absolute;
+    height: 44%;
+    width: 20%;
+    bottom: 58%;
+    right: 3%;
+    border: 0ch;
+    background-color: #F7F7F7;
+    font-size: small;
+    border-radius: 8px;
+    border: 2px solid blue;
+    color: rgb(77, 77, 248);
+}
+
+.notes {
+    background-image: url('notebg.png');
+    position: relative;
+    height: 15rem;
+    width: 12rem;
+    padding: 0px;
+    margin-left: 2px;
+    bottom: 8rem;
+}
+
+.textSpan {
+    position: absolute;
+    display: block;
+    height: 75%;
+    right: 9%;
+    top: 14%;
+    width: 174px;
+    margin-left: 14px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+
+.hourSpan {
+    position: absolute;
+    display: block;
+    height: 24px;
+
+    font-weight: bold;
+    font-size: x-small;
+    top: 94%;
+    right: 74%;
+}
+
+.dateSpan {
+    position: absolute;
+    top: 88%;
+    left: 8%;
+    font-weight: bold;
+    font-size: x-small;
+    
+
+}
+
+.deleteButton{
+    display: flex;
+    position: absolute;
+    top: 7%;
+    height: 4%;
+    width: 0%;
+    box-sizing: content-box;
+    background-color: #FEFF99;
+    border: outset;
+    align-items: center;
+    justify-content: center;
+}
+
+#setTimeInput {
+    position: absolute;
+ 
+    bottom: 71%;
+    right: 24%;
+    color: rgb(77, 77, 248);
+}
+
+#setDateInput {
+    position: absolute;
+        left: 14.9%;
+        bottom: 70%;
+    color: rgb(77, 77, 248);
+
+}
+
+.SaveButton {
+    position: absolute;
+    width: 250px;
+    border: 2px solid blue;
+    top: 286px;
+    left: 51.4%;
+}
+
+#resetButton {
+    position: absolute;
+    width: 250px;
+    border: 2px solid blue;
+    top: 286px;
+    left: 31.9%;
+}
